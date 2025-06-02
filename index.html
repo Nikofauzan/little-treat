@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>🍫 Little Treat</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      color: #a0522d;
+      margin-bottom: 30px;
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 30px;
+    }
+
+    .polaroid-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .polaroid {
+      background: white;
+      padding: 15px 15px 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 280px;
+      transition: transform 0.3s;
+    }
+
+    /* Efek miring ala polaroid */
+    .polaroid-container .polaroid:nth-child(1) {
+      transform: rotate(-4deg);
+    }
+
+    .polaroid-container .polaroid:nth-child(2) {
+      transform: rotate(3deg);
+    }
+
+    .polaroid-container .polaroid:nth-child(3) {
+      transform: rotate(-2deg);
+    }
+
+    .polaroid img,
+    .polaroid video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 0.85em;
+      color: #555;
+    }
+
+    .polaroid:hover {
+      transform: scale(1.03) rotate(0deg);
+    }
+  </style>
+</head>
+<body>
+  <h1 style="margin-bottom: 30px;">Hai, Indri! 😊</h1>
+  <p>Thanks for the freshcare & semangatnya buat si anak skripsi ini wkwk.<br>
+  Here's a little treat for you 🍫</p>
+
+  <p>Nih, gantian aku kasih kamu coklat kecil —<br>
+  biar kamu tetep manis ehh 😜</p>
+
+  <p>Anggap aja ini kenang-kenangan dari<br>
+  salah satu temen magang yang paling introvert ini</p>
+
+  <div class="polaroid-container">
+    <div class="polaroid">
+      <video autoplay muted loop playsinline>
+        <source src="source/video 1.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+      </video>
+      <div class="caption">Lagi ngasuh anak orang👶</div>
+    </div>
+
+    <div class="polaroid">
+      <video autoplay muted loop playsinline>
+        <source src="source/video 2.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+      </video>
+      <div class="caption">Semangat terus! ✨</div>
+    </div>
+
+    <div class="polaroid">
+      <img src="source/img 1.jpeg" alt="Foto 2">
+      <div class="caption">Thanks yaa 🎁</div>
+    </div>
+  </div>
+
+  <div class="note">
+    <p>Note: Kalau suatu hari kamu lihat halaman ini lagi...<br>
+    semoga senyum kamu masih sama kayak waktu pertama kita ngobrol 😄</p>
+  </div>
+</body>
+</html>
